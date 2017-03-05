@@ -1,224 +1,498 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> </title>
-    <link href="http://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
-   <style>
-      .skills h4 {
-    margin-top: 20px;
-    margin-bottom: 5px;
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Dario Miñones</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
 }
-.date {
-    font-size: 15px;
-    line-height: 24px;
+a {
+	color: #2ecc71;
 }
-.website {
-    line-height: 18px;
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
 }
 
-    </style>
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
 
-  
-  </head>
-  <body>
-    <div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-        <h1>Dario Miñones<h1>
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Dario Miñones
+					</h1>
+					<h2>
+						Software Engineer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
 
-        <h2>Buenos Aires, Argentina</h2>
-        </div>
-        <div class="col-md-6 col-sm-12">
-        <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;e3dbecd402e7a60d3cf6ed6fa72799c5?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px; margin-top: 20px;">
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">dminones@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">+54 (11) 5849-5932</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href=""></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I&#x27;m a Software Engineer from Buenos Aires, Argentina. I&#x27;m a self-starter, highly enthusiastic and motivated. I love to create great software using agile methodologies and being part of a great team that helps me to grow up professionally and personally.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://github.com/dminones">dminones</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						stackoverflow
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://stackoverflow.com/users/3516884/dminones">dminones</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        </div>
-        </div>
-      <hr style="color: #ccc; height: 4px;" />
-      <section class="row">
-        <header class="col-md-3">
-          <h3>About</h3>
-        </header>
-        <div class="col-md-9">
-          <p>I&#39;m a Software Engineer from Buenos Aires, Argentina. I&#39;m a self-starter, highly enthusiastic and motivated. I love to create great software using agile methodologies and being part of a great team that helps me to grow up professionally and personally.</p>
-          <strong>Phone:</strong> +54 (11) 5849-5932 <br />
-          <strong>Email:</strong> dminones@gmail.com<br />
-          <section id="profiles">
-            <div class="row">
-              <div class="col-sm-6">
-                <strong class="network">
-                  github
-                </strong>
-                <div class="username">
-                  <div class="url">
-                    <a target="_blank" href="http:&#x2F;&#x2F;github.com&#x2F;dminones">dminones</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <strong class="network">
-                  stackoverflow
-                </strong>
-                <div class="username">
-                  <div class="url">
-                    <a target="_blank" href="http:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;3516884&#x2F;dminones">dminones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-      <section class="row">
-        <header class="col-md-3">
-          <h3>Work Experience</h3>
-        </header>
-        <div class="col-md-9">
-          <div class="skills">
-              <h3>Cactus<span class="date pull-right">2013 - Present</span></h3>
-              <strong>CTO</strong>
-                <div class="website pull-right">
-                  <a target="_blank" href="https:&#x2F;&#x2F;cactus.ws">https:&#x2F;&#x2F;cactus.ws</a>
-                </div>
-              <p>Cactus is a small software agency that builds web apps,mobile apps and websites for a wide range of clients.  My role as the CTO is to develop strategies and leverage technologies to build great products. I do lead the engineering team and colaborate in our sales flow.</p>
-              <ul>
-                <li>Evaluate and identify appropriate technology platforms (including web application frameworks and the deployment stack) for delivering the company’s services.</li>
-                <li>Lead the team to do better software by helping to build progressive learning culture.</li>
-                <li>Establish a predictable model of envisioning, designing and developing products.</li>
-              </ul>
-            <hr />              <h3>Cactus<span class="date pull-right">2010 - 2013</span></h3>
-              <strong>Senior Developer</strong>
-                <div class="website pull-right">
-                  <a target="_blank" href="http:&#x2F;&#x2F;cactus.ws">http:&#x2F;&#x2F;cactus.ws</a>
-                </div>
-              <p>Developing iOS&#x2F;Android apps and Web apps from the scratch, from the client requirements, to the app store interacting with other members of the team such as designers and the client. Leading some projects involving other developers and designers to do so. I&#39;ve done a wide range of apps, from games to localization apps involving maps, complex animations and REST APi&#39;s.</p>
-              <ul>
-                <li>iOS localization related apps involving maps, local storage (Core Data), REST API interaction and API Development</li>
-                <li>iOS Games, including level downloads, In-App purchases</li>
-                <li>App store submission process</li>
-              </ul>
-            <hr />              <h3>Vortex<span class="date pull-right">2005 - 2010</span></h3>
-              <strong>Senior Electronics Technician</strong>
-                <div class="website pull-right">
-                  <a target="_blank" href="http:&#x2F;&#x2F;cactus.ws">http:&#x2F;&#x2F;cactus.ws</a>
-                </div>
-              <p>Electronic Repair Company. Repairing a wide range of devices such as Notebooks, P.O.S, Printers, etc.</p>
-              <ul>
-              </ul>
-            <hr />
-          </div>
-        </div>
-      </section>
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Cactus</span>
+					<span class="date">
+						2013-01-01 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://cactus.ws">https://cactus.ws</a>
+				</div>
+				<div class="position">
+					CTO
+				</div>
+				<div class="summary">
+					<p>Cactus is a small software agency that builds web apps,mobile apps and websites for a wide range of clients.  My role as the CTO is to develop strategies and leverage technologies to build great products. I do lead the engineering team and colaborate in our sales flow.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Evaluate and identify appropriate technology platforms (including web application frameworks and the deployment stack) for delivering the company’s services.</li>
+					<li class="bullet">Lead the team to do better software by helping to build progressive learning culture.</li>
+					<li class="bullet">Establish a predictable model of envisioning, designing and developing products.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Cactus</span>
+					<span class="date">
+						2010-07-18 — 2013-01-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://cactus.ws">http://cactus.ws</a>
+				</div>
+				<div class="position">
+					Senior Developer
+				</div>
+				<div class="summary">
+					<p>Developing iOS/Android apps and Web apps from the scratch, from the client requirements, to the app store interacting with other members of the team such as designers and the client. Leading some projects involving other developers and designers to do so. I&#x27;ve done a wide range of apps, from games to localization apps involving maps, complex animations and REST APi&#x27;s.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">iOS localization related apps involving maps, local storage (Core Data), REST API interaction and API Development</li>
+					<li class="bullet">iOS Games, including level downloads, In-App purchases</li>
+					<li class="bullet">App store submission process</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Vortex</span>
+					<span class="date">
+						2005-05-01 — 2010-02-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://cactus.ws">http://cactus.ws</a>
+				</div>
+				<div class="position">
+					Senior Electronics Technician
+				</div>
+				<div class="summary">
+					<p>Electronic Repair Company. Repairing a wide range of devices such as Notebooks, P.O.S, Printers, etc.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
-      <section class="row">
-        <header class="col-md-3">
-          <h3>Education</h3>
-        </header>
-        <div class="col-md-9">
-          <div class="skills">
-            <h3>Universidad de Buenos Aires<span class="date pull-right">2010 - 2016</span></h3>
-            <strong>Software Engineer, B.S.</strong>
-            <p></p>
-            <hr />
-            <h3>ACAP<span class="date pull-right">2009 - 2010</span></h3>
-            <strong>Web Development, Short Course</strong>
-            <p></p>
-            <hr />
-            <h3>Republica Francesa<span class="date pull-right">1998 - 2003</span></h3>
-            <strong>Electronics Technician, High School</strong>
-            <p></p>
-            <hr />
-          </div>
-        </div>
-      </section>
-      <section class="row">
-        <header class="col-md-3">
-          <h3>Volunteer</h3>
-        </header>
-        <div class="col-md-9">
-          <div class="skills">
-            <h3>Universidad de Buenos Aires &#x2F; Boise University<span class="date pull-right">2017 - Present</span></h3>
-            <strong>Volunteer</strong>
-              <div class="website pull-right">
-                <a target="_blank" href="https:&#x2F;&#x2F;github.com&#x2F;Roj&#x2F;recsys-comparison">https:&#x2F;&#x2F;github.com&#x2F;Roj&#x2F;recsys-comparison</a>
-              </div>
-            <p>Recommendation Systems Investigation using Lenkskit</p>
-            <ul>
-            </ul>
-            <hr />
-          </div>
-        </div>
-      </section>
-      <section class="row">
-        <header class="col-md-3">
-          <h3>Skills</h3>
-        </header>
-        <div class="col-md-9">
-          <div class="skills">
-            <ul>
-              <li>
-                <h4>iOS Development <span class="pull-right">Master</span></h4>
-                <ul>
-                  <li>Objective-c</li>
-                  <li>Swift</li>
-                  <li>REST API Interactions</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h4>Frontend Development <span class="pull-right">Master</span></h4>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>AngularJS</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h4>Backend Development <span class="pull-right">Master</span></h4>
-                <ul>
-                  <li>Node.Js</li>
-                  <li>PHP</li>
-                  <li>REST API</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="row">
-        <header class="col-md-3">
-          <h3>Languages</h3>
-        </header>
-        <div class="col-md-9">
-          <div class="skills">
-            <ul>
-              <li>
-                <h4>Spanish <span class="pull-right">Native speaker</span></h4>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h4>English <span class="pull-right">Advanced</span></h4>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Universidad de Buenos Aires / Boise University</span>
+					<span class="date">
+						2017-01-20 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://github.com/Roj/recsys-comparison">https://github.com/Roj/recsys-comparison</a>
+				</div>
+				<div class="position">
+					Volunteer
+				</div>
+				<div class="summary">
+					<p>Recommendation Systems Investigation using Lenkskit</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Universidad de Buenos Aires</span>
+					<span class="date">
+						2010-05-01 — 2016-03-01
+					</span>
+				</h4>
+				<div class="area">
+					Software Engineer
+				</div>
+				<div class="studyType">
+					B.S.
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>ACAP</span>
+					<span class="date">
+						2009-03-01 — 2010-02-01
+					</span>
+				</h4>
+				<div class="area">
+					Web Development
+				</div>
+				<div class="studyType">
+					Short Course
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Republica Francesa</span>
+					<span class="date">
+						1998-03-01 — 2003-12-01
+					</span>
+				</h4>
+				<div class="area">
+					Electronics Technician
+				</div>
+				<div class="studyType">
+					High School
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>iOS Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Objective-c</li>
+					<li>Swift</li>
+					<li>REST API Interactions</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Frontend Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>AngularJS</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Backend Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Node.Js</li>
+					<li>PHP</li>
+					<li>REST API</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-    </div>
-  </div>
-</div>
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Advanced
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-  </body>
+	
+
+	</div>
+	
+	</body>
 </html>
