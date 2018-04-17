@@ -2,11 +2,11 @@
   "basics": {
     "name": "Dario Miñones",
     "label": "Software Engineer",
-    "picture": "profile.png",
+    "picture": "https://avatars0.githubusercontent.com/u/1731297?s=460&v=4",
     "email": "dminones@gmail.com",
     "phone": "+54 (11) 5849-5932",
-    "website": "",
-    "summary": "I'm a Software Engineer from Buenos Aires, Argentina. I'm a self-starter, highly enthusiastic and motivated. I love to create great software using agile methodologies and being part of a great team that helps me to grow up professionally and personally.",
+    "website": "http://github.com/dminones",
+    "summary": "I'm a Software Engineer from Buenos Aires, Argentina. I'm self-starter, highly enthusiastic and motivated. I love to create great software using agile methodologies and being part of a great team that helps me to grow up professionally and personally.",
     "location": {
       "address": "Arenales 1954, Florda",
       "postalCode": "CA 94115",
@@ -119,6 +119,7 @@
         "HTML",
         "CSS",
         "Javascript",
+        "React",
         "AngularJS"
       ]
     },
