@@ -8,7 +8,7 @@
     "website": "http://github.com/dminones",
     "summary": "I'm a Software Engineer from Buenos Aires, Argentina. I'm self-starter, highly enthusiastic and motivated. I love to create great software using agile methodologies and being part of a great team that helps me to grow up professionally and personally.",
     "location": {
-      "address": "Arenales 1954, Florda",
+      "address": "Arenales 1954, Florida",
       "postalCode": "CA 94115",
       "city": "Buenos Aires, Argentina",
       "countryCode": "AR",
@@ -33,11 +33,10 @@
       "position": "CTO",
       "website": "https://cactus.ws",
       "startDate": "2013-01-01",
-      "summary": "Cactus is a small software agency that builds web apps,mobile apps and websites for a wide range of clients.  My role as the CTO is to develop strategies and leverage technologies to build great products. I do lead the engineering team and colaborate in our sales flow.",
+      "summary": "Cactus is a small software agency that builds web apps,mobile apps and websites for a wide range of clients.  My role as the CTO is to develop strategies, lead the team and leverage technologies to build great products.",
       "highlights": [
         "Evaluate and identify appropriate technology platforms (including web application frameworks and the deployment stack) for delivering the company’s services.",
-        "Lead the team to do better software by helping to build progressive learning culture.",
-        "Establish a predictable model of envisioning, designing and developing products."
+        "Lead several projects in which we develop the full stack including REST API in nodejs, Web version (using AngularJS or React) and mobile versions (iOS, Android)"
       ]
     },
     {
@@ -48,9 +47,9 @@
       "endDate": "2013-01-01",
       "summary": "Developing iOS/Android apps and Web apps from the scratch, from the client requirements, to the app store interacting with other members of the team such as designers and the client. Leading some projects involving other developers and designers to do so. I've done a wide range of apps, from games to localization apps involving maps, complex animations and REST APi's.",
       "highlights": [
-        "iOS localization related apps involving maps, local storage (Core Data), REST API interaction and API Development",
-        "iOS Games, including level downloads, In-App purchases",
-        "App store submission process"
+        "Build iOS localization related apps involving: Maps, Local storage (Core Data), REST API interaction and API Development",
+        "Build iOS Games including: Level downloads, In-App purchases",
+        "Submmited several apps to both stores: Apple Store and Play Store"
       ]
     },
     {
@@ -103,13 +102,14 @@
   "awards": [],
   "publications": [],
   "skills": [
+    
     {
-      "name": "iOS Development",
+      "name": "Backend Development",
       "level": "Master",
       "keywords": [
-        "Objective-c",
-        "Swift",
-        "REST API Interactions"
+        "Node.Js",
+        "PHP",
+        "REST API"
       ]
     },
     {
@@ -124,12 +124,12 @@
       ]
     },
     {
-      "name": "Backend Development",
+      "name": "iOS Development",
       "level": "Master",
       "keywords": [
-        "Node.Js",
-        "PHP",
-        "REST API"
+        "Objective-c",
+        "Swift",
+        "REST API Interactions"
       ]
     }
   ],
